@@ -100,7 +100,7 @@
 	});
 
 	/**
-	 * Scrool with ofset on links with a class name .scrollto
+	 * Scroll with offset on links with a class name .scrollto
 	 */
 	on(
 		'click',
@@ -123,7 +123,7 @@
 	);
 
 	/**
-	 * Scroll with ofset on page load with hash links in the url
+	 * Scroll with offset on page load with hash links in the url
 	 */
 	window.addEventListener('load', () => {
 		if (window.location.hash) {
@@ -152,10 +152,10 @@
 	/**
 	 * Skills animation
 	 */
-	let skilsContent = select('.skills-content');
-	if (skilsContent) {
+	let skillsContent = select('.skills-content');
+	if (skillsContent) {
 		new Waypoint({
-			element: skilsContent,
+			element: skillsContent,
 			offset: '80%',
 			handler: function (direction) {
 				let progress = select('.progress .progress-bar', true);
@@ -167,7 +167,7 @@
 	}
 
 	/**
-	 * Porfolio isotope and filter
+	 * Portfolio isotope and filter
 	 */
 	window.addEventListener('load', () => {
 		let portfolioContainer = select('.portfolio-container');
@@ -176,11 +176,11 @@
 				itemSelector: '.portfolio-item'
 			});
 
-			let portfolioFilters = select('#portfolio-flters li', true);
+			let portfolioFilters = select('#portfolio-filters li', true);
 
 			on(
 				'click',
-				'#portfolio-flters li',
+				'#portfolio-filters li',
 				function (e) {
 					e.preventDefault();
 					portfolioFilters.forEach(function (el) {
