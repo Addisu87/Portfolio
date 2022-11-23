@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://addisuhailepf.netlify.app/)
+[Live Demo Link](https://addisuhaileportfolio.netlify.app/)
 
 👤 **Addisu Haile**
 
